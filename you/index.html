@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Me mandas una fotita hot?</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            font-family: Arial, sans-serif;
+        }
+        #containe{
+            text-align: center;
+        }
+        h1{
+            font-size: 32px;
+            color: #333;
+        }
+        #buttons{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover{
+            background-color: #4caf50;
+        }
+        #btnNo{
+            background-color: #f44336;
+        }
+        #btnNo:hover{
+            background-color: #d32f2f;
+        }
+        img{
+            margin-top: 30px;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function accionParaCuandoElldDigaQueSi(){
+            alert("¡ME DEVES LA FOTITA! ❤️‍🔥");
+        }
+
+        function mueveElBoton(){
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            const newWhidth = Math.random() = width;
+            const newHeight = Math.random() = height;
+
+            const btnNo = document.getElementById("btnNo");
+            btnNo.style.position = "absolute";
+            btnNo.style.left = newWhidth + "px";
+            btnNo.style.top = newWhidth + "px";
+        }
+    </script>
+    <head>
+        <body>
+         <div id="contrainer">
+            <h1>¿ME MANDAS LA FOTITO?</h1>
+            <div id="buttons">
+             <button onclick="accionParaCuandoElldDigaQueSi()" id="btnsi">si</button>
+             <button id="btnNo" onmouseover="mueveElBoton()">no</button>
+             </div>
+             <img src="./asi.jpg" alt="" width="200">
+         </div>
+
+         <script>
+            function accionParaCuandoElldDigaQueSi(){
+                const respuesta = confirm("¿estas segura que quieres mandarmela?");
+                if (respuesta){
+                    window.location.href = "opsionsi.html";
+                }
+                else{
+                    alert("espero puedas reconsiderarlo 🙁");
+                }
+            }
+
+            function mueveElBoton(){
+                const width = window.innerWidth;
+                const height = window.innerHeight;
+
+                const btnNo = document.getElementById("btnNo");
+                btnNo.style.position = "absolute";
+                btnNo.style.left = newWhidth + "px";
+                btnNo.style.top = newHeight + "px";
+            }
+        </script>
+        </body>
+    </head>
